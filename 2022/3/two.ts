@@ -1,6 +1,6 @@
 export const solution = main;
 
-const fileInput = await Deno.readTextFile(`./3/input.txt`);
+const fileInput = await Deno.readTextFile(`./2022/3/input.txt`);
 
 function main(input: string = fileInput): number {
   const separatorRegex = /(\n)/;

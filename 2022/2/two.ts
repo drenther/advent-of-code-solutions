@@ -1,6 +1,6 @@
 export const solution = main;
 
-const fileInput = await Deno.readTextFile(`./2/input.txt`);
+const fileInput = await Deno.readTextFile(`./2022/2/input.txt`);
 
 type Move = "rock" | "paper" | "scissors";
 type FirstColumnMoveCode = "A" | "B" | "C";

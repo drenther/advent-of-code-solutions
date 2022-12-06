@@ -1,6 +1,6 @@
 export const solution = main;
 
-const fileInput = await Deno.readTextFile(`./4/input.txt`);
+const fileInput = await Deno.readTextFile(`./2022/4/input.txt`);
 
 function main(input: string = fileInput): number {
   const separatorRegex = /(\n)/;
@@ -33,8 +33,8 @@ function main(input: string = fileInput): number {
 
   return pairings.reduce((count, { left, right }) => {
     if (
-      (left.min >= right.min && left.min <= right.max) ||
-      (right.min >= left.min && right.min <= left.max)
+      (left.min >= right.min && left.max <= right.max) ||
+      (right.min >= left.min && right.max <= left.max)
     ) {
       return count + 1;
     }

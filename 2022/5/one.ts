@@ -1,6 +1,6 @@
 export const solution = main;
 
-const fileInput = await Deno.readTextFile(`./5/input.txt`);
+const fileInput = await Deno.readTextFile(`./2022/5/input.txt`);
 
 interface Stack {
   readonly items: string[];
